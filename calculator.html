@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <p>Click on output to clear</p>
+        <div class="calculator">
+            <a><div class="output" id="output" onClick=clearCalcText()>0.0</div></a>
+
+            <div class="row">
+                <a><div class="button" onClick=setCalcText(7)>7</div></a>
+                <a><div class="button" onClick=setCalcText(8)>8</div></a>
+                <a><div class="button" onClick=setCalcText(9)>9</div></a>
+                <a><div class="button operator" onClick=setCalcText('/')>/</div></a>
+            </div>
+            
+            
+            <div  class="row">
+                <a><div class="button" onClick=setCalcText(4)>4</div></a>
+                <a><div class="button" onClick=setCalcText(5)>5</div></a>
+                <a><div class="button" onClick=setCalcText(6)>6</div></a>
+                <a><div class="button operator" onClick=setCalcText('*')>*</div></a>
+            </div>
+
+            <div  class="row">
+                <a><div class="button" onClick=setCalcText(1)>1</div></a>
+                <a><div class="button" onClick=setCalcText(2)>2</div></a>
+                <a><div class="button" onClick=setCalcText(3)>3</div></a>
+                <a><div class="button operator" onClick=setCalcText('-')>-</div></a>
+            </div>
+            <div class="row">
+                <a><div class="button" onClick=setCalcText(0)>0</div></a>
+                <a><div class="button" style="padding-left: 25px; padding-right: 25px;" onClick=setCalcText('.')>.</div></a>
+                <a><div class="button operator" onClick=evaluateCalcText()>=</div></a>
+                <a><div class="button operator" onClick=setCalcText('+') style="position: relative; right: 15px">+</div></a>
+            </div>
+        </div>
+    </body>
+</html>
