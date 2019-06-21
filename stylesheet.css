@@ -1,27 +1,40 @@
 .button {
     display: inline-block;
-    padding: 5px 15px 5px 15px;
+    padding: 0px 15px 5px 15px;
     margin: 1px;
     font-size: 60px;
-    border: 0.05px solid #eee;
+    border: 0.05px solid darkgray;
     box-shadow: 50px, 50px, 10px, 50px, rgba(3, 16, 39, 0.699);
-    
+    width: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: darkgrey;
+    color:aliceblue
 }
 
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button:active {
+    transform: scale(0.9)
+}
 .output {
     text-align: right;
     font-size: 60px;
     padding: 5px;
-    color: black;
+    color:white;
+    background-color:rgba(211, 211, 211, 0.157);
 }
 
 .calculator {
-    width: 300px;
-    border: 1px solid #eee;
-    height: 473px;
+    width: 270px;
+    border: 1px solid lightgrey;
+    height: 520px;
     margin-top: 25px;
     margin-left: 50px;
     padding: 5px;
+    background-color: lightgray;
 }
 
 .row {
@@ -29,19 +42,9 @@
 }
 
 .operator {
-    float: right;
-}
-
-a {
-    color:black;
-    
+    background-color: grey;
 }
 
 body {
-    background-color: white;
-}
-
-p {
-    color: black;
-    margin-left: 145px;
+    background-color: grey;
 }

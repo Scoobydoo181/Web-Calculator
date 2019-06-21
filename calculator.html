@@ -7,36 +7,43 @@
     </head>
 
     <body>
-        <p>Click on output to clear</p>
-        <div class="calculator">
-            <a><div class="output" id="output" onClick=clearCalcText()>0.0</div></a>
+
+        <div class="calculator" id="calculator" onkeypress=keyEventHandler(event)>
+            <div class="output" id="output">0.0</div>
 
             <div class="row">
-                <a><div class="button" onClick=setCalcText(7)>7</div></a>
-                <a><div class="button" onClick=setCalcText(8)>8</div></a>
-                <a><div class="button" onClick=setCalcText(9)>9</div></a>
-                <a><div class="button operator" onClick=setCalcText('/')>/</div></a>
+                    <div class="button operator"  onClick=setCalcText("(")>(</div>
+                    <div class="button operator" onClick=setCalcText(")")>)</div>
+                    <div class="button" style="width: 1.59em; background-color: darkred" onClick=clearCalcText()>C</div>
+                    
+                </div>
+
+            <div class="row">
+                <div class="button" onClick=setCalcText(7)>7</div>
+                <div class="button" onClick=setCalcText(8)>8</div>
+                <div class="button" onClick=setCalcText(9)>9</div>
+                <div class="button operator" onClick=setCalcText('/')>/</div>
             </div>
             
             
             <div  class="row">
-                <a><div class="button" onClick=setCalcText(4)>4</div></a>
-                <a><div class="button" onClick=setCalcText(5)>5</div></a>
-                <a><div class="button" onClick=setCalcText(6)>6</div></a>
-                <a><div class="button operator" onClick=setCalcText('*')>*</div></a>
+                <div class="button op" onClick=setCalcText(4)>4</div>
+                <div class="button" onClick=setCalcText(5)>5</div>
+                <div class="button" onClick=setCalcText(6)>6</div>
+                <div class="button operator" onClick=setCalcText('*')>*</div>
             </div>
 
             <div  class="row">
-                <a><div class="button" onClick=setCalcText(1)>1</div></a>
-                <a><div class="button" onClick=setCalcText(2)>2</div></a>
-                <a><div class="button" onClick=setCalcText(3)>3</div></a>
-                <a><div class="button operator" onClick=setCalcText('-')>-</div></a>
+                <div class="button" onClick=setCalcText(1)>1</div>
+                <div class="button" onClick=setCalcText(2)>2</div>
+                <div class="button" onClick=setCalcText(3)>3</div>
+                <div class="button operator" onClick=setCalcText('-')>-</div>
             </div>
             <div class="row">
-                <a><div class="button" onClick=setCalcText(0)>0</div></a>
-                <a><div class="button" style="padding-left: 25px; padding-right: 25px;" onClick=setCalcText('.')>.</div></a>
-                <a><div class="button operator" onClick=evaluateCalcText()>=</div></a>
-                <a><div class="button operator" onClick=setCalcText('+') style="position: relative; right: 15px">+</div></a>
+                <div class="button" onClick=setCalcText('.')>.</div>
+                <div class="button" onClick=setCalcText(0)>0</div>
+                <div class="button" style="padding-right: 0.25em;" onClick=evaluateCalcText()>=</div>
+                <div class="button operator" onClick=setCalcText('+') >+</div>
             </div>
         </div>
     </body>
